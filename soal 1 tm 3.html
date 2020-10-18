@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>soal 1 tm 3.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="SynEdit HTML exporter" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+.cpp1-assembler { color: #0000FF; }
+.cpp1-character { color: #000000; }
+.cpp1-comment { color: #0078D7; font-style: italic; }
+.cpp1-float { color: #800080; }
+.cpp1-hexadecimal { color: #800080; }
+.cpp1-identifier { color: #000000; }
+.cpp1-illegalchar { color: #000000; }
+.cpp1-number { color: #800080; }
+.cpp1-octal { color: #800080; }
+.cpp1-preprocessor { color: #008000; }
+.cpp1-reservedword { color: #000000; font-weight: bold; }
+.cpp1-space { background-color: #FFFFFF; color: #000000; }
+.cpp1-string { color: #0000FF; font-weight: bold; }
+.cpp1-symbol { color: #FF0000; font-weight: bold; }
+-->
+</style>
+</head>
+<body>
+<pre>
+<code><span style="font: 10pt Consolas;"><span class="cpp1-preprocessor">#include &lt;iostream&gt;
+#include &lt;conio.h&gt;
+#include &lt;windows.h&gt;
+</span><span class="cpp1-reservedword">using</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">namespace</span><span class="cpp1-space"> std</span><span class="cpp1-symbol">;
+
+</span><span class="cpp1-identifier">main</span><span class="cpp1-symbol">(){
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> hari</span><span class="cpp1-symbol">,</span><span class="cpp1-identifier">jumlah</span><span class="cpp1-symbol">,</span><span class="cpp1-identifier">total</span><span class="cpp1-symbol">,</span><span class="cpp1-identifier">bayar</span><span class="cpp1-symbol">,</span><span class="cpp1-identifier">kembali</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">char</span><span class="cpp1-space"> nama</span><span class="cpp1-symbol">[</span><span class="cpp1-number">20</span><span class="cpp1-symbol">],</span><span class="cpp1-identifier">kodetujuan</span><span class="cpp1-symbol">[</span><span class="cpp1-number">2</span><span class="cpp1-symbol">],</span><span class="cpp1-identifier">namatujuan</span><span class="cpp1-symbol">[</span><span class="cpp1-number">15</span><span class="cpp1-symbol">],</span><span class="cpp1-identifier">konfir</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">long</span><span class="cpp1-space"> harga</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+awal </span><span class="cpp1-symbol">:
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot; Masukan Nama Pemesan Tiket : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cin </span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-space"> nama</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;=                         NIZAR TRAVEL                     =&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;==============================================================&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;= Kode = Tujuan Perjalanan = 1.Weekday = 2.Weekend = 3.Libur =&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;==============================================================&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;= SBY   = Surabaya            = 335.000   = 250.000   = 200.000 =&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;= YK   = Jogjakarta           = 220.000   = 200.000   = 180.000 =&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;= DPS   = DenpasarBali        = 460.000   = 430.000   = 350.000 =&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;==============================================================&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot; Pilih Tujuan Perjalanan (SBY/YK/DPS) : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cin </span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-space"> kodetujuan</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot; Pilih Hari Perjalanan (1/2/3) : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-space"> hari</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;==============================================================&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">((</span><span class="cpp1-identifier">strcmp</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">kodetujuan</span><span class="cpp1-symbol">,</span><span class="cpp1-string">&quot;SBY&quot;</span><span class="cpp1-symbol">)==</span><span class="cpp1-number">0</span><span class="cpp1-symbol">)||(</span><span class="cpp1-identifier">strcmp</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">kodetujuan</span><span class="cpp1-symbol">,</span><span class="cpp1-string">&quot;SBY&quot;</span><span class="cpp1-symbol">)==</span><span class="cpp1-number">0</span><span class="cpp1-symbol">)){
+</span><span class="cpp1-space">		strcpy</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">namatujuan</span><span class="cpp1-symbol">,</span><span class="cpp1-string">&quot; Surabaya &quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">hari</span><span class="cpp1-symbol">==</span><span class="cpp1-number">1</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">			harga</span><span class="cpp1-symbol">=</span><span class="cpp1-number">335000</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">hari</span><span class="cpp1-symbol">==</span><span class="cpp1-number">2</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">			harga</span><span class="cpp1-symbol">=</span><span class="cpp1-number">250000</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">hari</span><span class="cpp1-symbol">==</span><span class="cpp1-number">3</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">			harga</span><span class="cpp1-symbol">=</span><span class="cpp1-number">200000</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">else</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">			cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot; Kode Yang Anda Masukan Salah &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">			harga</span><span class="cpp1-symbol">=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">			exit</span><span class="cpp1-symbol">(</span><span class="cpp1-number">0</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}</span><span class="cpp1-space">	
+	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">((</span><span class="cpp1-identifier">strcmp</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">kodetujuan</span><span class="cpp1-symbol">,</span><span class="cpp1-string">&quot;YK&quot;</span><span class="cpp1-symbol">)==</span><span class="cpp1-number">0</span><span class="cpp1-symbol">)||(</span><span class="cpp1-identifier">strcmp</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">kodetujuan</span><span class="cpp1-symbol">,</span><span class="cpp1-string">&quot;YK&quot;</span><span class="cpp1-symbol">)==</span><span class="cpp1-number">0</span><span class="cpp1-symbol">)){
+</span><span class="cpp1-space">		strcpy</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">namatujuan</span><span class="cpp1-symbol">,</span><span class="cpp1-string">&quot;Jogjakarta&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">hari</span><span class="cpp1-symbol">==</span><span class="cpp1-number">1</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">			harga</span><span class="cpp1-symbol">=</span><span class="cpp1-number">220000</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">hari</span><span class="cpp1-symbol">==</span><span class="cpp1-number">2</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">			harga</span><span class="cpp1-symbol">=</span><span class="cpp1-number">200000</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">hari</span><span class="cpp1-symbol">==</span><span class="cpp1-number">3</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">			harga</span><span class="cpp1-symbol">=</span><span class="cpp1-number">180000</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">else</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">			cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot; Kode Yang Anda Masukan Salah &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">			harga</span><span class="cpp1-symbol">=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">			exit</span><span class="cpp1-symbol">(</span><span class="cpp1-number">0</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}</span><span class="cpp1-space">	
+	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">((</span><span class="cpp1-identifier">strcmp</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">kodetujuan</span><span class="cpp1-symbol">,</span><span class="cpp1-string">&quot;DPS&quot;</span><span class="cpp1-symbol">)==</span><span class="cpp1-number">0</span><span class="cpp1-symbol">)||(</span><span class="cpp1-identifier">strcmp</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">kodetujuan</span><span class="cpp1-symbol">,</span><span class="cpp1-string">&quot;dps&quot;</span><span class="cpp1-symbol">)==</span><span class="cpp1-number">0</span><span class="cpp1-symbol">)){
+</span><span class="cpp1-space">		strcpy</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">namatujuan</span><span class="cpp1-symbol">,</span><span class="cpp1-string">&quot;Denpasar&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">hari</span><span class="cpp1-symbol">==</span><span class="cpp1-number">1</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">			harga</span><span class="cpp1-symbol">=</span><span class="cpp1-number">460000</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">hari</span><span class="cpp1-symbol">==</span><span class="cpp1-number">2</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">			harga</span><span class="cpp1-symbol">=</span><span class="cpp1-number">430000</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">hari</span><span class="cpp1-symbol">==</span><span class="cpp1-number">3</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">			harga</span><span class="cpp1-symbol">=</span><span class="cpp1-number">350000</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">else</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">			cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot; Kode Yang Anda Masukan Salah &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">			harga</span><span class="cpp1-symbol">=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">			exit</span><span class="cpp1-symbol">(</span><span class="cpp1-number">0</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}</span><span class="cpp1-space">	
+	</span><span class="cpp1-symbol">}
+
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">else</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot; Kode Yang Anda Masukan Salah &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		harga</span><span class="cpp1-symbol">=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		exit</span><span class="cpp1-symbol">(</span><span class="cpp1-number">0</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Tujuan Perjalanan  : &quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">namatujuan</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Harga Tiket         : &quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">harga</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Jumlah Tiket       : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">jumlah</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	total</span><span class="cpp1-symbol">=</span><span class="cpp1-identifier">harga</span><span class="cpp1-symbol">*</span><span class="cpp1-identifier">jumlah</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;TOTAL BAYAR  : &quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">total</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;==============================================================&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Uang bayar : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">bayar</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	kembali</span><span class="cpp1-symbol">=</span><span class="cpp1-identifier">bayar</span><span class="cpp1-symbol">-</span><span class="cpp1-identifier">total</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Uang Kembali : &quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">kembali</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;==============================================================&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;=             TERIMA KASIH ATAS KEPERCAYAAN ANDA             =&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout </span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-space"> </span><span class="cpp1-string">&quot;==============================================================&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;\tINGIN INPUT LAGI [Y/T] : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">konfir</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">konfir</span><span class="cpp1-symbol">==</span><span class="cpp1-character">'Y'</span><span class="cpp1-symbol">||</span><span class="cpp1-identifier">konfir</span><span class="cpp1-symbol">==</span><span class="cpp1-character">'y'</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">goto</span><span class="cpp1-space"> awal</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}</span><span class="cpp1-reservedword">else</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">	exit</span><span class="cpp1-symbol">(</span><span class="cpp1-number">0</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	getch</span><span class="cpp1-symbol">();
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">return</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+}
+</span></span>
+</code></pre>
+</body>
+</html>
